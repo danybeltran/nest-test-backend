@@ -16,6 +16,10 @@ yarn start:dev
 
 To create seed data, make a GET request to `/seed/regenerate`. It will create a user with 5 resources (products).
 
+## GraphQL
+
+This project uses GraphQL and Apollo. You can open the playground by navigating to `/graphql`
+
 ## Compile and run the project
 
 ```bash
