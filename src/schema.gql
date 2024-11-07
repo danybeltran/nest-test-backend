@@ -1,0 +1,39 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Product {
+  id: String!
+  name: String!
+  price: Float!
+  description: String!
+  image_url: String!
+  container_id: String!
+}
+
+type Container {
+  id: String!
+  name: String!
+  user_id: String!
+  resources: [Product!]!
+}
+
+type Catalog {
+  id: String!
+  name: String!
+  containers: [Container!]!
+}
+
+type User {
+  id: String!
+  name: String!
+  resources: [Product!]!
+}
+
+type Query {
+  users: [User!]!
+  products: [Product!]!
+  containers: [Container!]!
+  personalization(userId: String!): Container!
+  catalogs: [Catalog!]!
+}
