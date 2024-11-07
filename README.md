@@ -1,11 +1,3 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-</p>
-
-## Description
-
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
-
 ## Project setup
 
 Add the `DATABASE_URL` environment variable to a `.env` file
@@ -15,6 +7,14 @@ Then
 ```bash
 $ yarn install
 ```
+
+Start the development server:
+
+```
+yarn start:dev
+```
+
+To create seed data, make a GET request to `/seed/regenerate`. It will create a user with 5 resources (products).
 
 ## Compile and run the project
 
